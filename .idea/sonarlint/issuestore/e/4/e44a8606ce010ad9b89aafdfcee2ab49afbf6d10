@@ -1,0 +1,9 @@
+
+]
+java:S1220""Move this file to a named package.8šÍó¸å1J$67de8bff-6f87-41e0-8f51-285a47602b08
+|
+java:S1854"9Remove this useless assignment to local variable "carte".(À¼”ò8 Íó¸å1J$548d77ef-46d3-4197-a095-ae4fa37d0ad6
+r	java:S106"+Replace this use of System.out by a logger.(Æ÷ºÎûÿÿÿÿ8¡Íó¸å1J$4ba64653-0de8-46d5-991f-d6d709f8f9ee
+r	java:S106	"+Replace this use of System.out by a logger.(Ô³Ôëþÿÿÿÿ8¡Íó¸å1J$762d2706-c61f-44b4-bfe3-1595fb0a15ef
+m
+java:S1481"*Remove this unused "carte" local variable.(À¼”ò8¨Íó¸å1J$2303fac0-73ba-480a-b491-ae66f2cb9e64
