@@ -1,21 +1,14 @@
 
 ”
-java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(™¹ëÕûÿÿÿÿ8ÚÇ­¹å1J$8ee5f361-4577-4a26-bff9-0ac74a0b6822
-”
-java:S2095H"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Áø’ûÿÿÿÿ8ò¡¾¸å1J$5d5d5974-905b-4891-b544-2ff7d502e513
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(™¹ëÕûÿÿÿÿ8Ş·ìÙå1J$4b130987-fd6a-4842-8dc8-ac191876a066
+‹
+java:S2095J"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(êÎ¡€8Ş·ìÙå1J$c9ae89f5-60e6-42e8-bdf8-b26eb69ce283
 ‚
-java:S1118":Add a private constructor to hide the implicit public one.( ó²êıÿÿÿÿ8õ¡¾¸å1J$8c60473f-96fa-43c5-831f-83adbc263e76
-†
-java:S18543">Remove this useless assignment to local variable "aventurier".(çôíŒıÿÿÿÿ8ö¡¾¸å1J$7c48c15d-c570-40bc-bb1a-55a7d7d6e1a8
-m	java:S106$"+Replace this use of System.out by a logger.(éº¢‰8û¡¾¸å1J$ed83a0b0-c8e9-4874-8197-577ebbfa961e
-l	java:S106("+Replace this use of System.out by a logger.(í®ø8ü¡¾¸å1J$ca7dfa0c-0987-4be2-968d-b17b5abd2e53
-r	java:S106-"+Replace this use of System.out by a logger.(šËÚôùÿÿÿÿ8ı¡¾¸å1J$2fdb685c-0c63-4c1e-be2c-1f638474563f
-m	java:S1062"+Replace this use of System.out by a logger.(÷±Ûì8ı¡¾¸å1J$d90d1a68-0a22-4c95-aedf-b68dc932fdc7
-w
-java:S14813"/Remove this unused "aventurier" local variable.(çôíŒıÿÿÿÿ8ş¡¾¸å1J$b26ed9c0-88e0-4f10-8423-025fdfc461bc
-‚
-java:S1854H":Remove this useless assignment to local variable "writer".(Áø’ûÿÿÿÿ8ÿ¡¾¸å1J$a7f87e09-b072-45c5-97e2-c6cb1984a7e3
-s
-java:S1481H"+Remove this unused "writer" local variable.(Áø’ûÿÿÿÿ8ÿ¡¾¸å1J$12c92b04-c8e4-4061-9d9f-60b61575a6a3
-z
-java:S1144K"7Remove this unused private "setCarteAvecObjets" method.(Áô¶¹8¢¾¸å1J$c968f792-70e9-47b3-9936-e5e068cf9435
+java:S1118":Add a private constructor to hide the implicit public one.( ó²êıÿÿÿÿ8ß·ìÙå1J$e2a678a4-4683-4dcf-9569-272cf5eb79fa
+m	java:S106&"+Replace this use of System.out by a logger.(éº¢‰8â·ìÙå1J$02a30b0b-c29f-49be-999d-caacf551f818
+l	java:S106*"+Replace this use of System.out by a logger.(í®ø8ã·ìÙå1J$6c429052-58b1-4107-8152-c659d4da23e3
+r	java:S106/"+Replace this use of System.out by a logger.(šËÚôùÿÿÿÿ8ã·ìÙå1J$9f46488c-2401-41a0-a4c1-559a718af043
+m	java:S1064"+Replace this use of System.out by a logger.(÷±Ûì8ã·ìÙå1J$7ea01881-fbd9-46ac-b2e2-ad7d4bd6e5d1
+u
+java:S1128
+"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8æ·ìÙå1J$03ccbae7-6be4-44bc-9bb8-dd43e24dfa27

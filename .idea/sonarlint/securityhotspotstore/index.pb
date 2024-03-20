@@ -31,3 +31,5 @@ h
 8src/main/java/exceptions/DirectionInvalideException.java,b/4/b440549152e9a5441495efb337cc332d68da357b
 j
 :src/main/java/exceptions/OrientationInvalideException.java,a/9/a928973c20b4a0a8976a02b56d3a62c9f201a450
+g
+7src/main/java/exceptions/PositionInvalideException.java,1/5/15713fea901162a6aa05dda0829a388b4ad466c6

@@ -1,5 +1,6 @@
 package services;
 
+import enums.DirectionEnum;
 import enums.OrientationEnum;
 import exceptions.CarteNotFoundException;
 import models.*;
@@ -11,8 +12,13 @@ import java.util.List;
 
 public class FileService {
 
-    public static Carte lireFichierEntree(String filename) {
+
+    public static Carte lireFichierEntree(String filename) throws CarteNotFoundException {
         Carte carte = new Carte();
+        // 1. Construction de la carte
+        List<Montagne> montagnes = new ArrayList<>();
+        List<Tresor> tresors = new ArrayList<>();
+        Aventurier aventurier = null;
         try {
             // FileReader pour lire le fichier contenant les données
             FileReader fileReader = new FileReader(filename);
@@ -21,10 +27,6 @@ public class FileService {
 
             // Lecture de la ligne suivante
             String line = reader.readLine();
-
-            // 1. Construction de la carte
-            List<Montagne> montagnes = new ArrayList<>();
-            List<Tresor> tresors = new ArrayList<>();
 
             // Si la ligne n'est pas null
             while (line != null) {
@@ -48,7 +50,8 @@ public class FileService {
                         break;
                     case "A":
                         System.out.println("Il s'agit d'un aventurier");
-                        Aventurier aventurier = new Aventurier(OrientationEnum.valueOf(listeString[4]).getValeur(), new Position(Integer.parseInt(listeString[2]), Integer.parseInt(listeString[3])), null, Arrays.stream(listeString[4].split("")).toList());
+                        List<DirectionEnum> directions = getDirectionsAventurier(listeString[5].split(""));
+                        aventurier = new Aventurier(OrientationEnum.valueOf(listeString[4]), new Position(Integer.parseInt(listeString[2]), Integer.parseInt(listeString[3])), null, directions);
                         break;
                     default:
                         break;
@@ -61,20 +64,36 @@ public class FileService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        setCarteAvecObjets(carte, montagnes, tresors, aventurier);
         return carte;
     }
 
-        public static void ecrireFichierDeSortie() throws IOException {
-            String filename = "";
+        public static void ecrireFichierDeSortie(String outputFilename, Carte carte) throws IOException {
+            try {
             // Création d'un fileWriter pour écrire dans un fichier
-            FileWriter fileWriter = new FileWriter("src/main/resources/output/" + filename, false);
-            // Création d'un bufferedWriter qui utilise le fileWriter
-            BufferedWriter writer = new BufferedWriter(fileWriter);
+                FileWriter fileWriter = new FileWriter(outputFilename, false);
+                fileWriter.write(carte.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
-        private static void setCarteAvecObjets(Carte carte, List<Montagne> montagnes, List<Tresor> tresors) throws CarteNotFoundException {
-            carte.setMontagnes(montagnes);
-            carte.setTresors(tresors);
+        private static void setCarteAvecObjets(Carte carte, List<Montagne> montagnes, List<Tresor> tresors, Aventurier aventurier) throws CarteNotFoundException {
+            if (carte != null) {
+                carte.setMontagnes(montagnes);
+                carte.setTresors(tresors);
+                carte.setAventurier(aventurier);
+            } else {
+                throw new CarteNotFoundException("Les données de la carte n'existent pas");
+            }
+        }
+
+        private static List<DirectionEnum> getDirectionsAventurier(String[] directionsString) {
+            List<DirectionEnum> directionsEnum = new ArrayList<>();
+            for(String direction : directionsString) {
+                directionsEnum.add(DirectionEnum.valueOf(direction));
+            }
+            return directionsEnum;
         }
     }
 

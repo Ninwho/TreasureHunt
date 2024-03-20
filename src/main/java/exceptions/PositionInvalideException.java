@@ -1,4 +1,4 @@
 package exceptions;
 
-public class PositionInvalideException {
+public class PositionInvalideException extends Throwable {
 }

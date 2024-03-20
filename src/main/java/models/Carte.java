@@ -12,25 +12,17 @@ public class Carte {
 
     public Carte() {
     }
-    public Carte(int hauteur, int largeur) {
-        this.hauteur = hauteur;
+    public Carte(int largeur, int hauteur) {
         this.largeur = largeur;
+        this.hauteur = hauteur;
     }
 
-    public Carte(int hauteur, int largeur, List<Tresor> tresors, List<Montagne> montagnes, Aventurier aventurier) {
-        this.hauteur = hauteur;
+    public Carte(int largeur, int hauteur, List<Tresor> tresors, List<Montagne> montagnes, Aventurier aventurier) {
         this.largeur = largeur;
+        this.hauteur = hauteur;
         this.tresors = tresors;
         this.montagnes = montagnes;
         this.aventurier = aventurier;
-    }
-
-    public int getHauteur() {
-        return hauteur;
-    }
-
-    public void setHauteur(int hauteur) {
-        this.hauteur = hauteur;
     }
 
     public int getLargeur() {
@@ -39,6 +31,14 @@ public class Carte {
 
     public void setLargeur(int largeur) {
         this.largeur = largeur;
+    }
+
+    public int getHauteur() {
+        return hauteur;
+    }
+
+    public void setHauteur(int hauteur) {
+        this.hauteur = hauteur;
     }
 
     public List<Tresor> getTresors() {
@@ -68,8 +68,8 @@ public class Carte {
     @Override
     public String toString() {
         return "Carte{" +
-                "hauteur=" + hauteur +
-                ", largeur=" + largeur +
+                "largeur=" + largeur +
+                ", hauteur=" + hauteur +
                 ", tresors=" + tresors +
                 ", montagnes=" + montagnes +
                 ", aventurier=" + aventurier +

@@ -7,22 +7,22 @@ import java.util.List;
 
 public class Aventurier extends Objet {
 
-    private String orientation;
+    private OrientationEnum orientation;
     private List<Tresor> tresors;
-    private List<String> directions;
+    private List<DirectionEnum> directions;
 
-    public Aventurier(String orientation, Position position, List<Tresor> tresors, List<String> directions) {
+    public Aventurier(OrientationEnum orientation, Position position, List<Tresor> tresors, List<DirectionEnum> directions) {
         super(position);
         this.orientation = orientation;
         this.tresors = tresors;
         this.directions = directions;
     }
 
-    public String getOrientation() {
+    public OrientationEnum getOrientation() {
         return orientation;
     }
 
-    public void setOrientation(String orientation) {
+    public void setOrientation(OrientationEnum orientation) {
         this.orientation = orientation;
     }
 
@@ -34,11 +34,11 @@ public class Aventurier extends Objet {
         this.tresors = tresors;
     }
 
-    public List<String> getDirections() {
+    public List<DirectionEnum> getDirections() {
         return directions;
     }
 
-    public void setDirections(List<String> directions) {
+    public void setDirections(List<DirectionEnum> directions) {
         this.directions = directions;
     }
 
