@@ -1,14 +1,7 @@
 
 ”
-java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(™¹ëÕûÿÿÿÿ8Ş·ìÙå1J$4b130987-fd6a-4842-8dc8-ac191876a066
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(™¹ëÕûÿÿÿÿ8¦­ªç1J$8e8dd1a8-d951-4ebb-a049-199095e1d32b
 ‹
-java:S2095J"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(êÎ¡€8Ş·ìÙå1J$c9ae89f5-60e6-42e8-bdf8-b26eb69ce283
-‚
-java:S1118":Add a private constructor to hide the implicit public one.( ó²êıÿÿÿÿ8ß·ìÙå1J$e2a678a4-4683-4dcf-9569-272cf5eb79fa
-m	java:S106&"+Replace this use of System.out by a logger.(éº¢‰8â·ìÙå1J$02a30b0b-c29f-49be-999d-caacf551f818
-l	java:S106*"+Replace this use of System.out by a logger.(í®ø8ã·ìÙå1J$6c429052-58b1-4107-8152-c659d4da23e3
-r	java:S106/"+Replace this use of System.out by a logger.(šËÚôùÿÿÿÿ8ã·ìÙå1J$9f46488c-2401-41a0-a4c1-559a718af043
-m	java:S1064"+Replace this use of System.out by a logger.(÷±Ûì8ã·ìÙå1J$7ea01881-fbd9-46ac-b2e2-ad7d4bd6e5d1
-u
-java:S1128
-"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8æ·ìÙå1J$03ccbae7-6be4-44bc-9bb8-dd43e24dfa27
+java:S2095M"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(êÎ¡€8¦­ªç1J$8c5f6868-184c-42af-af4e-dbd4fc21953f
+‡
+java:S2147B"DCombine this catch with the one at line 64, which has the same body.(ï­£Ä8¬­ªç1J$96d5217e-3b5f-4615-af9d-45c95a3743b7
